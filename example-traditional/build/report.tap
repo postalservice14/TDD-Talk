@@ -1,0 +1,4 @@
+TAP version 13
+ok 1 - Traditional\Test\Text\WrapperTest::testConstructor
+ok 2 - Traditional\Test\Text\WrapperTest::testWrap
+1..2

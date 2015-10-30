@@ -1,0 +1,12 @@
+
+
+Code Coverage Report:  
+  2015-10-26 08:36:11  
+                       
+ Summary:              
+  Classes:  0.00% (0/1)
+  Methods:  0.00% (0/1)
+  Lines:   83.33% (5/6)
+
+\Traditional\Text::Wrapper
+  Methods:   0.00% ( 0/ 1)   Lines:  83.33% (  5/  6)

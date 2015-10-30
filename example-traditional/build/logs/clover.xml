@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1445873771">
+  <project timestamp="1445873771">
+    <package name="Traditional\Text">
+      <file name="/Users/kellyj/Projects/TDD-Talk/example-traditional/src/Text/Wrapper.php">
+        <class name="Wrapper" namespace="Traditional\Text">
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="5" elements="7" coveredelements="5"/>
+        </class>
+        <line num="12" type="method" name="wrap" crap="3.04" count="1"/>
+        <line num="14" type="stmt" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <line num="20" type="stmt" count="1"/>
+        <line num="23" type="stmt" count="0"/>
+        <metrics loc="24" ncloc="19" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="5" elements="7" coveredelements="5"/>
+      </file>
+    </package>
+    <metrics files="1" loc="24" ncloc="19" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="5" elements="7" coveredelements="5"/>
+  </project>
+</coverage>

@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>TDD</title>
+
+		<meta name="description" content="TDD">
+		<meta name="author" content="John Kelly">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                <section>
+                    <h1>PDX PHP Meetup</h1>
+                    <h3>Thanks to our sponsor!</h3>
+                    <p>
+                        <img src="images/MSLogo.png" width="600" />
+                    </p>
+                    <p><small>WiFi: Guest, Password: mountaingoat1</small></p>
+                </section>
+
+				<section>
+					<h1>Demystifying TDD</h1>
+					<h3>Test Driven Development in PHP</h3>
+					<p>
+						<small>by John Kelly / <a href="http://twitter.com/postalservice14">@postalservice14</a></small>
+					</p>
+				</section>
+
+                <section>
+                    <h2>John Kelly</h2>
+                    <ul>
+                        <li>Division Software Architect at CDK Global</li>
+                        <li>Zend Certified Engineer - PHP 5.3</li>
+                        <li>Software engineering for 12 years</li>
+                    </ul>
+
+                    <p>
+                        <img src="images/cdk_logo.png" width="161" height="110" style="padding: 15px;background-color: white;" />
+                    </p>
+                </section>
+
+				<section>
+					<h2>Overview</h2>
+					<p class="fragment">
+						<img src="images/I_want_you.jpg" width="400" height="400" />
+					</p>
+				</section>
+
+				<section>
+					<h2>What We'll Go Over</h2>
+					<ul>
+						<li>What is TDD?</li>
+						<li>Why TDD?</li>
+						<li>How to follow TDD (live example)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What We Will NOT Cover</h2>
+					<ul>
+						<li>How to install PHPUnit, Composer, etc.</li>
+						<li>How to get tests working in your IDE</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What is TDD?</h2>
+					<blockquote style="font-size: 0.9em;" cite="https://www.quora.com/Why-does-Kent-Beck-refer-to-the-rediscovery-of-test-driven-development">
+						&quot;The original description of TDD was in an ancient book about programming. It said you take the input tape, manually type in the output tape you expect, then program until the actual output tape matches the expected output. After I'd written the first xUnit framework in Smalltalk I remembered reading this and tried it out. That was the origin of TDD for me. When describing TDD to older programmers, I often hear, 'Of course. How else could you program?' Therefore I refer to my role as 'rediscovering' TDD.&quot;
+					</blockquote>
+					<p><em>Kent Beck</em><small>https://www.quora.com/Why-does-Kent-Beck-refer-to-the-rediscovery-of-test-driven-development</small></p>
+				</section>
+
+				<section>
+					<section>
+						<h2>How does it work?</h2>
+						<p>
+							<img src="images/Test-driven_development.png" width="683" height="490" alt="The test-driven development cycle" /><br />
+							<small>Image courtesy of http://en.wikipedia.org/wiki/Test-driven_development</small>
+						</p>
+					</section>
+					<section>
+						<h2>But really, How does it work?</h2>
+						<ol>
+							<li>Write test</li>
+							<li>Make it pass</li>
+							<li>Refactor</li>
+						</ol>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>But why write the test first?</h2>
+						<ol>
+							<li class="fragment">You'll actually write them!</li>
+							<li class="fragment">They're more meaningful</li>
+						</ol>
+					</section>
+
+					<section>
+						<h2>More productive</h2>
+						<blockquote cite="http://nparc.cisti-icist.nrc-cnrc.gc.ca/npsi/ctrl?action=shwart&index=an&req=5763742&lang=en">
+							&quot;We found that test-first students on average wrote more tests and, in turn, students who wrote more tests tended to be more productive&quot;
+						</blockquote>
+						<p><em>Erdogmus, Hakan; Morisio, Torchiano. <a href="http://nparc.cisti-icist.nrc-cnrc.gc.ca/npsi/ctrl?action=shwart&index=an&req=5763742&lang=en">On the Effectiveness of Test-first Approach to Programming</a></em></p>
+						<aside class="notes">
+							A 2005 study found that using TDD meant writing more tests and, in turn, programmers who wrote more tests tended to be more productive.
+						</aside>
+					</section>
+
+					<section>
+						<h2>It drives the design of a program.</h2>
+
+						<aside class="notes">
+							concerned with the interface before the implementation
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<h2>Sold! How do I start?</h2>
+					<p>
+						<img src="images/sold.jpeg" width="280" height="180" alt="Sold" />
+					</p>
+				</section>
+
+				<section>
+					<h2>The Story</h2>
+					<p><strong>Background:</strong> You work for a company that sends marketing emails to clients.</p>
+					<blockquote style="text-align: left;">
+						As a subscriber<br />
+						I don't want to have to scroll horizontally to read a plaintext message<br />
+						So that I can read the message easier
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Planning</h2>
+					<blockquote>
+						TDD helps you achieve a better design, but it does not eliminate the need for up-front design and thinking.
+					</blockquote>
+					<aside class="notes">
+						Perhaps a Text\Wrapper class
+					</aside>
+				</section>
+
+				<section>
+					<h2>Let's get started...</h2>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

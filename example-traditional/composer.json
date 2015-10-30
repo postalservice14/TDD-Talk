@@ -1,0 +1,24 @@
+{
+    "name": "kellyj/tddexample",
+    "description": "Example TDD Application",
+    "authors": [
+        {
+            "name": "John Kelly",
+            "email": "john.m.kelly@cdk.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Traditional\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Traditional\\Test\\": "tests"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    }
+}

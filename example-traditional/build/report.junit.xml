@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/Users/kellyj/Projects/TDD-Talk/example-traditional/tests" tests="2" assertions="2" failures="0" errors="0" time="0.006051">
+    <testsuite name="Traditional\Test\Text\WrapperTest" file="/Users/kellyj/Projects/TDD-Talk/example-traditional/tests/Text/WrapperTest.php" tests="2" assertions="2" failures="0" errors="0" time="0.006051">
+      <testcase name="testConstructor" class="Traditional\Test\Text\WrapperTest" file="/Users/kellyj/Projects/TDD-Talk/example-traditional/tests/Text/WrapperTest.php" line="19" assertions="1" time="0.003387"/>
+      <testcase name="testWrap" class="Traditional\Test\Text\WrapperTest" file="/Users/kellyj/Projects/TDD-Talk/example-traditional/tests/Text/WrapperTest.php" line="24" assertions="1" time="0.002664"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
